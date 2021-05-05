@@ -74,6 +74,8 @@ We will also have exciting contests and prizes for all our participants across t
         </figure>
       </div>
       <div class="card-content">
+        <div class="ribbon ribbon-top-right"><span>RailsConf</span></div>
+
         <div class="media">
           <div class="media-content">
             <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">
