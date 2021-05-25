@@ -136,7 +136,7 @@ We will also have exciting contests and prizes for all our participants across t
     </thead>
     <tbody>
       {% render "joint_session", time: "14:00", title: "Pre-Event Hangout Hour" %}
-      {% render "joint_session", time: "15:55", title: "Welcome and Opening Remarks" %}
+      {% render "joint_session", time: "15:00", title: "Welcome and Opening Remarks" %}
       {% render "speakers_slot", speakers: site.data.speakers, time: "15:05" %}
       {% render "joint_session", time: "15:55", title: "Break" %}
       {% render "joint_session", time: "16:00", title: "🏆 Ruby Trivia Quiz 1 🏆" %}
