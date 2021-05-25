@@ -11,7 +11,7 @@ The conference experience, minus the jetlag! Join us online on June 9, 2021
 
 There are so many Rubyists in Europe, the Middle East, and Africa, but we haven't managed to gather much in the past year, and we could definitely learn a lot from each other. Let's get together (virtually for now) and experience some of the excitement of an international conference (remember those?), without jetlag or timezone challenges!
 
-Our first event will be a meetup-of-meetups featuring EMEA speakers from this past RailsConf. Keep scrolling to find out [which meetups are participating](#participating-meetups) and [who our speakers are](#speakers).
+Our first event will be a meetup-of-meetups featuring EMEA speakers from this past RailsConf and recent EMEA conferences. Keep scrolling to find out [which meetups are participating](#participating-meetups) and [who our speakers are](#speakers).
 
 You can also:
 
