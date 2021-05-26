@@ -1,4 +1,7 @@
 <tr class="{% if title == "Break" %}break{% endif %}">
-  <th>{{ time }} UTC / <span class="hidden zoned-time" data-time="2021-06-09T{{ time }}:00Z"></span></th>
+  <th>
+    <span class="utc-time">{{ time }}</span>
+    <span class="is-hidden local-time" data-time="2021-06-09T{{ time }}:00Z"></span>
+  </th>
   <td colspan="4" class="has-text-centered">{{ title }}{% if title == "Break" %} ☕️ {% endif %}</td>
 </tr>

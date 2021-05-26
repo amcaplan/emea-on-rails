@@ -17,10 +17,11 @@ You can also:
 
 * [Register your meetup](https://forms.gle/s44Z78KySXYurX27A)
 * [Follow us on Twitter](https://twitter.com/emeaonrails) for updates
+* <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd" data-luma-action="checkout" data-luma-event-id="evt-zcbXUT9G4Y1sVBd">Sign up for the event!</a> <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd">(accessible link)</a>
 
 ## The Technical Details
 
-We'll meet on the evening of June 9, at 15:00 UTC / <span class="hidden zoned-time" data-time="2021-06-09T15:00:00Z"></span>, via SignalWire (link to be provided). You can view the [schedule](#schedule) below.
+We'll meet on the evening of June 9, at 15:00 UTC<span class="is-hidden is-parenthesized has-pre-space has-zone local-time" data-time="2021-06-09T15:00:00Z"></span>, via SignalWire (link to be provided). You can view the [schedule](#schedule) below.
 
 We will also have exciting contests and prizes for all our participants across the region!
 
@@ -125,8 +126,23 @@ We will also have exciting contests and prizes for all our participants across t
 # Schedule
 {: .mb-5 .title .has-text-centered #schedule}
 
+<div id="time-display-toggle" class="tabs is-toggle is-toggle-rounded">
+  <ul>
+    <li class="is-active" data-time="utc">
+      <a class="button">
+        <span>UTC</span>
+      </a>
+    </li>
+    <li data-time="local">
+      <a class="button">
+        <span>Local Time<span class="is-hidden is-parenthesized has-pre-space only-zone local-time" data-time="2021-06-09T15:00:00Z"></span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+
 <div class="table-container">
-  <table class="table is-striped is-fullwidth">
+  <table id="schedule-table" class="table is-striped is-fullwidth">
     <thead>
       <th>Time</th>
       <th>Speaker 1</th>
@@ -174,13 +190,15 @@ We will also have exciting contests and prizes for all our participants across t
 
 <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 <script type="text/javascript">
+  var forEach = Array.prototype.forEach;
+
   document.body.addEventListener("keyup", function(e) {
     if (e.keyCode !== 27) return;
     var modal = document.getElementsByClassName("modal is-active")[0];
     if (modal) modal.classList.remove('is-active');
   });
 
-  Array.prototype.forEach.call(document.getElementsByClassName("speaker-schedule-listing"), function(el) {
+  forEach.call(document.getElementsByClassName("speaker-schedule-listing"), function(el) {
     el.addEventListener("click", function(e) {
       e.preventDefault();
       var modalId = document.querySelector("#speaker-" + el.dataset.speakerSlug + "-card .card-footer a.speaker-read-more").dataset.modalId;
@@ -188,16 +206,47 @@ We will also have exciting contests and prizes for all our participants across t
     });
   });
 
-  Array.prototype.forEach.call(document.getElementsByClassName("speaker-read-more"), function(el) {
+  forEach.call(document.getElementsByClassName("speaker-read-more"), function(el) {
     el.addEventListener("click", function(e) {
       e.preventDefault();
       document.getElementById(el.dataset.modalId).classList.add('is-active');
     });
   });
 
-  Array.prototype.forEach.call(document.getElementsByClassName('zoned-time'), function(el) {
-    var timeString = (new Date(Date.parse(el.dataset.time))).toLocaleTimeString('en-us',{timeZoneName:'short', hour12: false}).replace(/:\d\d /, ' ');
-    el.innerHTML = timeString;
-    el.classList.remove('hidden');
+  forEach.call(document.getElementsByClassName('local-time'), function(el) {
+    var time = (new Date(Date.parse(el.dataset.time))).toLocaleTimeString('en-us',{timeZoneName:'short', hour12: false}).replace(/:\d\d /, ' ');
+    if (el.classList.contains("only-zone")) {
+      time = time.split(' ')[1];
+    } else if (!el.classList.contains("has-zone")) {
+      time = time.split(' ')[0];
+    }
+    if (el.classList.contains("is-parenthesized")) time = "(" + time + ")";
+    if (el.classList.contains("has-pre-space")) time = " " + time;
+    el.innerHTML = time;
+    el.classList.remove('is-hidden');
   });
+
+  var timeToggles = document.body.querySelectorAll("#time-display-toggle li");
+  forEach.call(timeToggles, function(el) {
+    el.addEventListener("click", function(e) {
+      forEach.call(timeToggles, function(el) { el.classList.remove('is-active'); });
+      el.classList.add('is-active');
+      if (el.dataset.time == "utc") {
+        forEach.call(document.body.querySelectorAll("#schedule-table .utc-time"), function(el) {
+          el.classList.remove("is-hidden");
+        });
+        forEach.call(document.body.querySelectorAll("#schedule-table .local-time"), function(el) {
+          el.classList.add("is-hidden");
+        });
+      } else {
+        forEach.call(document.body.querySelectorAll("#schedule-table .local-time"), function(el) {
+          el.classList.remove("is-hidden");
+        });
+        forEach.call(document.body.querySelectorAll("#schedule-table .utc-time"), function(el) {
+          el.classList.add("is-hidden");
+        });
+      }
+    });
+  });
+  document.body.querySelector("#time-display-toggle li[data-time=local]").click()
 </script>

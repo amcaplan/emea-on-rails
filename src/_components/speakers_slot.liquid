@@ -1,6 +1,9 @@
 {% assign speakers = speakers | where: 'time', time | sort: "name" | reverse %}
 <tr>
-  <th>{{ time }} UTC / <span class="hidden zoned-time" data-time="2021-06-09T{{ time }}:00Z"></span></th>
+  <th>
+    <span class="utc-time">{{ time }}</span>
+    <span class="is-hidden local-time" data-time="2021-06-09T{{ time }}:00Z"></span>
+  </th>
   {% for speaker in speakers %}
     {% assign speaker-slug = speaker.name | downcase | replace: ' ', '-' %}
     <td id="td-{{ speaker-slug }}" class="speaker-schedule-listing" data-speaker-slug="{{ speaker-slug }}">
