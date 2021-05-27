@@ -1,0 +1,8 @@
+{% assign speaker-slug = speaker.name | downcase | replace: ' ', '-' %}
+<td id="td-{{ speaker-slug }}" class="speaker-schedule-listing" data-speaker-slug="{{ speaker-slug }}">
+  <a href="#td={{ speaker-slug }}">
+    <strong>{{ speaker.name }}</strong>
+    <br/>
+    <em>{{ speaker.title }}</em>
+  </a>
+</td>

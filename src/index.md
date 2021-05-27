@@ -144,23 +144,22 @@ We will also have exciting contests and prizes for all our participants across t
   <table id="schedule-table" class="table is-striped is-fullwidth">
     <thead>
       <th>Time</th>
-      <th>Speaker 1</th>
-      <th>Speaker 2</th>
-      <th>Speaker 3</th>
-      <th>Speaker 4</th>
+      {% for track in site.data.tracks %}
+        <th>{{ track }}</th>
+      {% endfor %}
     </thead>
     <tbody>
       {% render "joint_session", time: "14:00", title: "Pre-Event Hangout Hour" %}
       {% render "joint_session", time: "15:00", title: "Welcome and Opening Remarks" %}
-      {% render "speakers_slot", speakers: site.data.speakers, time: "15:05" %}
+      {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "15:05" %}
       {% render "joint_session", time: "15:55", title: "Break" %}
       {% render "joint_session", time: "16:00", title: "🏆 Ruby Trivia Quiz 1 🏆" %}
-      {% render "speakers_slot", speakers: site.data.speakers, time: "16:10" %}
+      {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "16:10" %}
       {% render "joint_session", time: "16:40", title: "Break" %}
       {% render "joint_session", time: "16:45", title: "Meetup Breakout Sessions" %}
       {% render "joint_session", time: "17:10", title: "Break" %}
       {% render "joint_session", time: "17:15", title: "🏆 Ruby Trivia Quiz 2 🏆" %}
-      {% render "speakers_slot", speakers: site.data.speakers, time: "17:25" %}
+      {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "17:25" %}
       {% render "joint_session", time: "18:10", title: "Closing Remarks and Post-Event Hangout Hour" %}
     </tbody>
   </table>

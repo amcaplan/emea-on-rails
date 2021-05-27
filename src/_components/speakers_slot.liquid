@@ -4,18 +4,12 @@
     <span class="utc-time">{{ time }}</span>
     <span class="is-hidden local-time" data-time="2021-06-09T{{ time }}:00Z"></span>
   </th>
-  {% for speaker in speakers %}
-    {% assign speaker-slug = speaker.name | downcase | replace: ' ', '-' %}
-    <td id="td-{{ speaker-slug }}" class="speaker-schedule-listing" data-speaker-slug="{{ speaker-slug }}">
-      <a href="#td={{ speaker-slug }}">
-        <strong>{{ speaker.name }}</strong>
-        <br/>
-        <em>{{ speaker.title }}</em>
-      </a>
-    </td>
+  {% for track in tracks %}
+    {% assign speaker = speakers | where: "track", track | first %}
+    {% if speaker %}
+      {% render "speakers_slot_entry", speaker: speaker %}
+    {% else %}
+      <td></td>
+    {% endif %}
   {% endfor %}
-  {% if speakers.size == 2 %}
-    <td>TBA</td>
-    <td>TBA</td>
-  {% endif %}
 </tr>

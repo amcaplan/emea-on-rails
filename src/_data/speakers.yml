@@ -10,6 +10,7 @@
   bio: |-
     Ariel works as a software engineer at Cloudinary, trying to bend the curve to achieve both code quality and great performance. In his experience, seeking multiple perspectives is the greatest tool available.
   time: '15:05'
+  track: "2021 on Rails"
 - name: Ben Greenberg
   twitter: rabbigreenberg
   title: Self-Care on Rails
@@ -21,6 +22,7 @@
   bio: |-
     Ben is a second career developer who previously spent a decade in the fields of adult education, community organizing, and non-profit management. He works as the Ruby developer advocate for Vonage by day and experiments with open source projects at night. He writes regularly on the intersection of community development and tech. Originally from Southern California and a long time resident of New York City, Ben now resides near Tel Aviv.
   time: '16:10'
+  track: "General"
 - name: Maciek Rząsa
   avatar: Maciej-sweter
   twitter: mjrzasa
@@ -34,6 +36,7 @@
 
     Knowledge sharing advocate. Co-organiser of Rzeszów Ruby User Group. Speaker at technical conferences and meetups. Instructor at Rzeszów University of Technology.
   time: '15:05'
+  track: "General"
 - name: Ramón Huidobro
   twitter: hola_soy_milk
   title: "New dev, old codebase: A series of mentorship stories"
@@ -45,6 +48,7 @@
 
     His main motivation is community. He's not only actively worked software builders both new and experienced, but also dedicated a time to organising conferences, workshops and other events aimed at helping empower folks in their tech journey.
   time: '17:25'
+  track: "Tech Leadership"
 - name: Jonas Jabari
   twitter: jonasjabari
   title: Beautiful reactive web UIs, Ruby and you
@@ -53,6 +57,7 @@
   bio: |-
     Jonas is a self-employed software developer. For years he struggled with increasing complexity of web app development caused by adding a JS frontend application instead of using the UI layer of Rails. He decided to fight against this complexity and created Matestack enabling Rails developers to implement reactive UIs in pure Ruby while enjoying highest developer happiness. Speaking of happiness: In his spare time he enjoys a good coffee and memes of funny dogs (and sometimes cats).
   time: '17:25'
+  track: "2021 on Rails"
 - name: Ufuk Kayserilioglu
   twitter: paracycle
   title: The Curious Case of the Bad Clone
@@ -63,6 +68,7 @@
   bio: |-
     Ufuk is the Production Engineering Manager of the Ruby Infrastructure team at Shopify and brings over 20 years of industry experience to the company for the adoption of better Ruby tooling and practices. He currently works remotely from Cyprus where he lives with his beloved wife and wonderful daughter.
   time: '15:05'
+  track: "Ruby Under the Hood"
 - name: Avital Tzubeli
   twitter: avitaltzubeli
   title: Storytelling for Tech People
@@ -72,6 +78,7 @@
   bio: |-
     Avital Tzubeli is a passionate storyteller and tech storytelling trainer. She believes that any boring content can be turned into a magical fairytale. Avital began telling stories in NYC, and has since spoken on stages in Stockholm, Dublin, Tokyo, Brussels, and throughout the USA. A software engineer turned developer advocate, now at Vonage, Avital loves empowering developers to build epic stories and share them with the world.
   time: '15:05'
+  track: "Stories && Tech"
 - name: Vladimir Dementyev
   twitter: palkan_tula
   title: Frontendless Rails frontend
@@ -82,6 +89,7 @@
   bio: |-
     Vladimir is a mathematician who found his happiness in programming Ruby and Erlang, contributing to open source and being an Evil Martian. Author of AnyCable, TestProf, ActionPolicy and many yet unknown ukulele melodies.
   time: '16:10'
+  track: "2021 on Rails"
 - name: Tanaka Mutakwa
   twitter: GeneralMutakwa
   title: Making the Leap into Tech Leadership
@@ -94,12 +102,15 @@
 
     Tanaka is also the Founder/Organiser of the [Tech Leadership community in South Africa](https://www.meetup.com/Tech-Leadership-Meetup-Cape-Town/).
   time: '16:10'
+  track: "Tech Leadership"
 - name: Miriam Tocino
   twitter: miriamtocino
-  title: Zerus & Ona: A warm welcome to the world of technology
+  title: "Zerus & Ona: A warm welcome to the world of technology"
   abstract: |-
     Young children are growing up highly surrounded by technology without knowing what's behind it. How do we spark their curiosity and introduce them to the world of technology to not only use it as consumers but to start seeing themselves as creators?
 
     In this workshop, you'll get to know Zerus and Ona, a 0 and a 1, living inside your computer and sharing their adventures in The Binary World. Along with Miriam, you'll create a new story from scratch that will inspire every child to learn more about technology and start gaining superpowers.
   bio: |-
     Miriam Tocino is a programming teacher, software developer, and mom of a 4yo boy dedicated to making computers more approachable, friendly, and easy to understand. She is the author of [Zerus & Ona](https://zerusandona.com/), a children's book series to discover the world of technology through illustration and the power of stories.
+  time: '17:25'
+  track: "Stories && Tech"
