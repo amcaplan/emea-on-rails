@@ -79,6 +79,7 @@
     Avital Tzubeli is a passionate storyteller and tech storytelling trainer. She believes that any boring content can be turned into a magical fairytale. Avital began telling stories in NYC, and has since spoken on stages in Stockholm, Dublin, Tokyo, Brussels, and throughout the USA. A software engineer turned developer advocate, now at Vonage, Avital loves empowering developers to build epic stories and share them with the world.
   time: '15:05'
   track: "Stories && Tech"
+  workshop: true
 - name: Vladimir Dementyev
   twitter: palkan_tula
   title: Frontendless Rails frontend
@@ -114,3 +115,4 @@
     Miriam Tocino is a programming teacher, software developer, and mom of a 4yo boy dedicated to making computers more approachable, friendly, and easy to understand. She is the author of [Zerus & Ona](https://zerusandona.com/), a children's book series to discover the world of technology through illustration and the power of stories.
   time: '17:25'
   track: "Stories && Tech"
+  workshop: true

@@ -4,5 +4,11 @@
     <strong>{{ speaker.name }}</strong>
     <br/>
     <em>{{ speaker.title }}</em>
+    <br/>
   </a>
+  {% if speaker.workshop %}
+    <span class="tag is-warning is-light">Workshop</span>
+  {% else %}
+    <span class="tag is-success is-light">Talk</span>
+  {% endif %}
 </td>
