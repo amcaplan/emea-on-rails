@@ -116,3 +116,16 @@
   time: '17:25'
   track: "Stories && Tech"
   workshop: true
+- name: Hongli Lai
+  twitter: honglilai
+  title: "Democratizing the fight against Ruby memory bloat"
+  abstract: |-
+    Ruby apps can use a lot of memory, but not for the reasons you think. I've discovered that as much as 70% of the memory usage is not caused by Ruby, but by the system's memory allocator! The good news is that there are technically simple solutions. So why isn't everybody using them? That's the bad news: they're cumbersome to deploy. We can say that the solutions are not "democratized".
+
+    I'm on a mission to allow everyone to easily get rid of Ruby memory bloat. In this talk I'll explain where Ruby memory bloat comes from, what the solutions are, and how I'm working on democratizing the solutions in the form of Fullstaq Ruby. I will also talk about my efforts to make Fullstaq Ruby a sustainable open source project.
+  bio: |-
+    Hongli Lai is an entrepreneurial developer and consultant. He has 20 years of experience in software development. As the founder of [Phusion](https://www.phusion.nl/) and the [Passenger application server](https://www.phusionpassenger.com/), he has more than 10 years of experience with running a business. As an advisor of [Fullstaq](https://fullstaq.com/), he helps organizations solve difficult problems.
+
+    Hongli believes that software should be easy and joyful to use (which is one of the reasons he loves Ruby) and that work should be fun. He mentors people and helps them grow. On his blog [Joyful Bikeshedding](https://www.joyfulbikeshedding.com/), he documents his latest adventures.
+  time: '16:10'
+  track: "Ruby Under the Hood"
