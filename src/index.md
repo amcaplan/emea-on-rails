@@ -107,8 +107,7 @@ We will also have exciting contests and prizes for all our participants across t
                   <p>Bio</p>
                 </div>
                 <div class="message-body content">
-                  {% assign paragraphs = speaker.bio | newline_to_br | split: '<br />' %}
-                  {% for paragraph in paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+                  {{ speaker.bio | markdownify }}
                 </div>
               </article>
             </section>

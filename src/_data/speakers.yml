@@ -31,6 +31,7 @@
     Why was I deploying so late? How did we measure the migration effects? And why was I testing on production? I'll tell you a tale of small steps, monitoring, and old tricks in a new setting. Hope, despair, and broken production included.
   bio: |-
     Software engineer specialising in Ruby with ~10 years of experience in various domains. Interested in distributed systems, self-organising teams and writing software that matters. At Toptal where he works, he is involved in a Billing Extraction project in which a complex domain of billing is isolated as a separate service.
+
     Knowledge sharing advocate. Co-organiser of Rzeszów Ruby User Group. Speaker at technical conferences and meetups. Instructor at Rzeszów University of Technology.
   time: '15:05'
 - name: Ramón Huidobro
@@ -41,6 +42,7 @@
     In this talk, we'll go over some of my mentorship experiences, adopting techniques and learning to teach, so we can teach to learn. Anyone can be a great mentor!
   bio: |-
     Ramón is a software engineering and developer relations contractor based in Vienna, Austria. He's spent the last ten years being directly involved with small businesses and startups getting their apps off the ground or back in shape!
+
     His main motivation is community. He's not only actively worked software builders both new and experienced, but also dedicated a time to organising conferences, workshops and other events aimed at helping empower folks in their tech journey.
   time: '17:25'
 - name: Jonas Jabari
