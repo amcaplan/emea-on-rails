@@ -185,6 +185,27 @@ We will also have exciting contests and prizes for all our participants across t
 {% endfor %}
 </div>
 
+----
+{: .my-6}
+
+# Organized By:
+{: .mb-5 .title .has-text-centered #organizers}
+
+<div class="columns is-mobile is-multiline is-justify-content-center">
+{% assign alphabetized-organizers = site.data.organizers | sort: "name" %}
+{% for organizer in alphabetized-organizers %}
+  <div class="column is-2-desktop is-3-tablet is-5-mobile is-flex" style="justify-content: center;">
+     <a href="{% if speaker.link %}{{ speaker.link }}{% else %}https://twitter.com/{{ speaker.twitter }}{% endif %}" target="_blank">
+      <figure class="image is-128x128">
+          <img src="https://res.cloudinary.com/caplan/image/{% if organizer.avatar %}upload{% else %}twitter_name{% endif %}/w_256,h_256,c_fill,r_max,f_auto,q_auto/{% if organizer.avatar %}emea-on-rails-2021/organizers/{{organizer.avatar}}{% else %}{{organizer.twitter}}{% endif %}.jpg" alt="Profile of {{organizer.name}}" />
+      </figure>
+      <div class="has-text-centered has-text-weight-semibold is-size-5">
+        {{ organizer.name }}
+      </div>
+    </a>
+  </div>
+{% endfor %}
+</div>
 
 <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 <script type="text/javascript">
