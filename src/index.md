@@ -32,7 +32,7 @@ We will also have exciting contests and prizes for all our participants across t
 ----
 {: .my-6}
 
-# Participating Meetups (so far)
+# Participating Meetups
 {: .mb-5 .title .has-text-centered #participating-meetups}
 
 <div class="columns is-mobile is-multiline is-justify-content-center">
@@ -47,14 +47,6 @@ We will also have exciting contests and prizes for all our participants across t
   </div>
 {% endfor %}
 </div>
-<p class="mt-5 has-text-centered">
-  <a href="https://forms.gle/s44Z78KySXYurX27A">
-    <button class="button is-primary">
-      <span class="icon"><i class="fa fa-file-text"></i></span>
-      <span>Add my meetup!</span>
-    </button>
-  </a>
-</p>
 
 ----
 {: .my-6}
