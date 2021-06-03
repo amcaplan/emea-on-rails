@@ -5,9 +5,9 @@
     <span class="is-hidden local-time" data-time="2021-06-09T{{ time }}:00Z"></span>
   </th>
   {% for track in tracks %}
-    {% assign speaker = speakers | where: "track", track | first %}
+    {% assign speaker = speakers | where: "track", track.name | first %}
     {% if speaker %}
-      {% render "speakers_slot_entry", speaker: speaker %}
+      {% render "speakers_slot_entry", speaker: speaker, track: track %}
     {% else %}
       <td></td>
     {% endif %}

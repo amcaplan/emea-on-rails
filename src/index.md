@@ -137,7 +137,7 @@ We will also have exciting contests and prizes for all our participants across t
     <thead>
       <th>Time</th>
       {% for track in site.data.tracks %}
-        <th>{{ track }}</th>
+        <th>{{ track.name }}</th>
       {% endfor %}
     </thead>
     <tbody>
