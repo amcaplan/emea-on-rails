@@ -209,8 +209,9 @@ We will also have exciting contests and prizes for all our participants across t
     if (modal) modal.classList.remove('is-active');
   });
 
-  forEach.call(document.getElementsByClassName("speaker-schedule-listing"), function(el) {
+  forEach.call(document.querySelectorAll(".speaker-schedule-listing a.talk-modal-link"), function(el) {
     el.addEventListener("click", function(e) {
+      if (!el.dataset.speakerSlug) return;
       e.preventDefault();
       var modalId = document.querySelector("#speaker-" + el.dataset.speakerSlug + "-card .card-footer a.speaker-read-more").dataset.modalId;
       document.getElementById(modalId).classList.add('is-active');
