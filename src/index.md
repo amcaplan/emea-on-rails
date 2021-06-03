@@ -186,7 +186,7 @@ We will also have exciting contests and prizes for all our participants across t
 <div class="columns is-mobile is-multiline is-justify-content-center">
 {% assign alphabetized-organizers = site.data.organizers | sort: "name" %}
 {% for organizer in alphabetized-organizers %}
-  <div class="column is-2-desktop is-3-tablet is-5-mobile is-flex" style="justify-content: center;">
+  <div class="column is-2-desktop is-3-tablet is-6-mobile is-flex" style="justify-content: center;">
      <a href="{% if speaker.link %}{{ speaker.link }}{% else %}https://twitter.com/{{ speaker.twitter }}{% endif %}" target="_blank">
       <figure class="image is-128x128">
           <img src="https://res.cloudinary.com/caplan/image/{% if organizer.avatar %}upload{% else %}twitter_name{% endif %}/w_256,h_256,c_fill,r_max,f_auto,q_auto/{% if organizer.avatar %}emea-on-rails-2021/organizers/{{organizer.avatar}}{% else %}{{organizer.twitter}}{% endif %}.jpg" alt="Profile of {{organizer.name}}" />
