@@ -145,12 +145,12 @@ We will also have exciting contests and prizes for all our participants across t
       {% render "joint_session", time: "15:00", title: "Welcome and Opening Remarks" %}
       {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "15:05" %}
       {% render "joint_session", time: "15:55", title: "Break" %}
-      {% render "joint_session", time: "16:00", title: "🏆 Ruby Trivia Quiz 1 🏆" %}
+      {% render "joint_session", time: "16:00", title: "🏆 Ruby Trivia Quiz 1 🏆", joinLink: true %}
       {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "16:10" %}
       {% render "joint_session", time: "16:40", title: "Break" %}
       {% render "joint_session", time: "16:45", title: "Meetup Breakout Sessions" %}
       {% render "joint_session", time: "17:10", title: "Break" %}
-      {% render "joint_session", time: "17:15", title: "🏆 Ruby Trivia Quiz 2 🏆" %}
+      {% render "joint_session", time: "17:15", title: "🏆 Ruby Trivia Quiz 2 🏆", joinLink: true %}
       {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "17:25" %}
       {% render "joint_session", time: "18:10", title: "Closing Remarks and Post-Event Hangout Hour" %}
     </tbody>
@@ -261,4 +261,8 @@ We will also have exciting contests and prizes for all our participants across t
     });
   });
   document.body.querySelector("#time-display-toggle li[data-time=local]").click()
+
+  document.querySelectorAll('.outlink.is-hidden').forEach(function(link) {
+    if (new Date() > Date.parse(link.dataset.hideUntil)) link.classList.remove('is-hidden');
+  });
 </script>
