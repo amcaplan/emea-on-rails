@@ -79,7 +79,7 @@ This code of conduct and its related procedures also applies to unacceptable beh
 
 ## 10. Contact info
 
-You can reach any one of the following people: Benjamin Aronov (@aronovbenjamin), Ariel Caplan (@amcaplan), Ben Greenberg (@rabbigreenberg)
+To report issues, you can use the [provided form](https://docs.google.com/forms/d/e/1FAIpQLSf8EOu8XRIcVemF62dT3BYI9nP5_0sSaT7eJ-rb7sH0zYN5qQ/viewform?usp=sf_link) or email [coc@emeaonrails.com](mailto:coc@emeaonrails.com).
 
 ## 11. License and attribution
 
