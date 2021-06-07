@@ -129,3 +129,12 @@
     Hongli believes that software should be easy and joyful to use (which is one of the reasons he loves Ruby) and that work should be fun. He mentors people and helps them grow. On his blog [Joyful Bikeshedding](https://www.joyfulbikeshedding.com/), he documents his latest adventures.
   time: '16:10'
   track: "Ruby Under the Hood"
+- name: Michael Kimathi
+  twitter: m_k_global
+  title: "A History of Nairuby and Tech Development in Africa"
+  abstract: |-
+  What is a tech community? Why should you join a tech community? How can you add value to a community you are a member of? Nairuby has come a long way and so has the tech ecosystem. Reminiscing about the community journey will guide us for the next few decades.
+  bio: |-
+    Michael Kimathi connects people to solutions that empower them to realize their highest potential.  He enjoys enabling others to lead fulfilling professional lives and helping businesses grow. Entrepreneur in music and technology. Experienced leader, founder, and co-founder. Developer relations community lead at [AfricasTalking](https://africastalking.com/).
+  time: '15:05'
+  track: "Tech Leadership"
