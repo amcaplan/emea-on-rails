@@ -17,7 +17,7 @@ You can also:
 
 * [Register your meetup](https://forms.gle/s44Z78KySXYurX27A)
 * [Follow us on Twitter](https://twitter.com/emeaonrails) for updates
-* <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd" data-luma-action="checkout" data-luma-event-id="evt-zcbXUT9G4Y1sVBd">Sign up for the event!</a> 
+* <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd" data-luma-action="checkout" data-luma-event-id="evt-zcbXUT9G4Y1sVBd">Sign up for the event!</a> <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd">(accessible link)</a>
 
 ## The Technical Details
 
