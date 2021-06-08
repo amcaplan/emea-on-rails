@@ -32,7 +32,7 @@ We will also have exciting contests and prizes for all our participants across t
 ----
 {: .my-6}
 
-# Participating Meetups
+## Participating Meetups
 {: .mb-5 .title .has-text-centered #participating-meetups}
 
 <div class="columns is-mobile is-multiline is-justify-content-center">
@@ -51,7 +51,7 @@ We will also have exciting contests and prizes for all our participants across t
 ----
 {: .my-6}
 
-# Speakers
+## Speakers
 {: .mb-5 .title .has-text-centered #speakers}
 
 <div class="columns is-multiline is-justify-content-center">
@@ -69,7 +69,7 @@ We will also have exciting contests and prizes for all our participants across t
         <div class="media">
           <div class="media-content">
             <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">
-              <h4 class="title is-4">{{ speaker.name }}</h4>
+              <h3 class="title is-4">{{ speaker.name }}</h3>
             </a>
             <p class="subtitle is-6 is-italic min-2-line-height-mobile">{{ speaker.title }}</p>
           </div>
@@ -114,7 +114,7 @@ We will also have exciting contests and prizes for all our participants across t
 ----
 {: .my-6}
 
-# Schedule
+## Schedule
 {: .mb-5 .title .has-text-centered #schedule}
 
 <div id="time-display-toggle" class="tabs is-toggle is-toggle-rounded">
@@ -161,7 +161,7 @@ We will also have exciting contests and prizes for all our participants across t
 ----
 {: .my-6}
 
-# Thanks to our Supporters!
+## Thanks to our Supporters!
 {: .mb-5 .title .has-text-centered #supporters}
 
 <div class="columns is-mobile is-multiline is-justify-content-center">
@@ -180,14 +180,14 @@ We will also have exciting contests and prizes for all our participants across t
 ----
 {: .my-6}
 
-# Organized By:
+## Organized By:
 {: .mb-5 .title .has-text-centered #organizers}
 
 <div class="columns is-mobile is-multiline is-justify-content-center">
 {% assign alphabetized-organizers = site.data.organizers | sort: "name" %}
 {% for organizer in alphabetized-organizers %}
   <div class="column is-2-desktop is-3-tablet is-6-mobile is-flex" style="justify-content: center;">
-     <a href="{% if speaker.link %}{{ speaker.link }}{% else %}https://twitter.com/{{ speaker.twitter }}{% endif %}" target="_blank">
+     <a href="{% if organizer.link %}{{ organizer.link }}{% else %}https://twitter.com/{{ organizer.twitter }}{% endif %}" target="_blank">
       <figure class="image is-128x128">
           <img src="https://res.cloudinary.com/caplan/image/{% if organizer.avatar %}upload{% else %}twitter_name{% endif %}/w_256,h_256,c_fill,r_max,f_auto,q_auto/{% if organizer.avatar %}emea-on-rails-2021/organizers/{{organizer.avatar}}{% else %}{{organizer.twitter}}{% endif %}.jpg" alt="Profile of {{organizer.name}}" />
       </figure>
