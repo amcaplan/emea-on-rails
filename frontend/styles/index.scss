@@ -21,6 +21,13 @@ header.hero.is-dark.is-bold {
   padding-bottom: 3rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .navbar:not(.is-transparent) .navbar-menu {
+    background-color: #2fa4e7;
+    background-image: linear-gradient(180deg, #54b4eb 0%, #2fa4e7 60%, #1d9ce5 100%);
+  }
+}
+
 nav.navbar:not(.is-transparent) {
   background-image: linear-gradient(180deg, #54b4eb 0%, #3f84c4 60%, #235c96 100%);
 }
