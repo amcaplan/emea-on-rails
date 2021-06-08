@@ -119,12 +119,12 @@ We will also have exciting contests and prizes for all our participants across t
 
 <div id="time-display-toggle" class="tabs is-toggle is-toggle-rounded">
   <ul>
-    <li class="is-active" data-time="utc">
+    <li class="is-active" data-time="utc" tabindex="0">
       <a class="button">
         <span>UTC</span>
       </a>
     </li>
-    <li data-time="local">
+    <li data-time="local" tabindex="0">
       <a class="button">
         <span>Local Time<span class="is-hidden is-parenthesized has-pre-space only-zone local-time" data-time="2021-06-09T15:00:00Z"></span></span>
       </a>
@@ -240,7 +240,7 @@ We will also have exciting contests and prizes for all our participants across t
 
   var timeToggles = document.body.querySelectorAll("#time-display-toggle li");
   forEach.call(timeToggles, function(el) {
-    el.addEventListener("click", function(e) {
+    var toggleTime = function(e) {
       forEach.call(timeToggles, function(el) { el.classList.remove('is-active'); });
       el.classList.add('is-active');
       if (el.dataset.time == "utc") {
@@ -258,7 +258,9 @@ We will also have exciting contests and prizes for all our participants across t
           el.classList.add("is-hidden");
         });
       }
-    });
+    };
+    el.addEventListener("click", toggleTime);
+    el.addEventListener("keyup", function(e) { if (e.keyCode === 13) toggleTime(e); });
   });
   document.body.querySelector("#time-display-toggle li[data-time=local]").click()
 </script>
