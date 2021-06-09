@@ -15,13 +15,13 @@ Our first event will be a meetup-of-meetups featuring EMEA speakers from this pa
 
 You can also:
 
-* [Register your meetup](https://forms.gle/s44Z78KySXYurX27A)
 * [Follow us on Twitter](https://twitter.com/emeaonrails) for updates
 * <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd" data-luma-action="checkout" data-luma-event-id="evt-zcbXUT9G4Y1sVBd">Sign up for the event!</a> <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd">(accessible link)</a>
+* [JOIN NOW!](https://emeaonrails.sw.work)
 
 ## The Technical Details
 
-We'll meet on the evening of June 9, at 15:00 UTC<span class="is-hidden is-parenthesized has-pre-space has-zone local-time" data-time="2021-06-09T15:00:00Z"></span>, via SignalWire (link to be provided). You can view the [schedule](#schedule) below.
+We'll meet on the evening of June 9, at 15:00 UTC<span class="is-hidden is-parenthesized has-pre-space has-zone local-time" data-time="2021-06-09T15:00:00Z"></span>, via SignalWire ([JOIN NOW!](https://emeaonrails.sw.work)). You can view the [schedule](#schedule) below.
 
 We will also have exciting contests and prizes for all our participants across the region!
 
