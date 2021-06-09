@@ -15,13 +15,13 @@ Our first event will be a meetup-of-meetups featuring EMEA speakers from this pa
 
 You can also:
 
-* [Register your meetup](https://forms.gle/s44Z78KySXYurX27A)
 * [Follow us on Twitter](https://twitter.com/emeaonrails) for updates
 * <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd" data-luma-action="checkout" data-luma-event-id="evt-zcbXUT9G4Y1sVBd">Sign up for the event!</a> <a href="https://lu.ma/event/evt-zcbXUT9G4Y1sVBd">(accessible link)</a>
+* [JOIN NOW!](https://emeaonrails.sw.work)
 
 ## The Technical Details
 
-We'll meet on the evening of June 9, at 15:00 UTC<span class="is-hidden is-parenthesized has-pre-space has-zone local-time" data-time="2021-06-09T15:00:00Z"></span>, via SignalWire (link to be provided). You can view the [schedule](#schedule) below.
+We'll meet on the evening of June 9, at 15:00 UTC<span class="is-hidden is-parenthesized has-pre-space has-zone local-time" data-time="2021-06-09T15:00:00Z"></span>, via SignalWire ([JOIN NOW!](https://emeaonrails.sw.work)). You can view the [schedule](#schedule) below.
 
 We will also have exciting contests and prizes for all our participants across the region!
 
@@ -145,12 +145,12 @@ We will also have exciting contests and prizes for all our participants across t
       {% render "joint_session", time: "15:00", title: "Welcome and Opening Remarks" %}
       {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "15:05" %}
       {% render "joint_session", time: "15:55", title: "Break" %}
-      {% render "joint_session", time: "16:00", title: "🏆 Ruby Trivia Quiz 1 🏆" %}
+      {% render "joint_session", time: "16:00", title: "🏆 Ruby Trivia Quiz 1 🏆", joinLink: true %}
       {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "16:10" %}
       {% render "joint_session", time: "16:40", title: "Break" %}
       {% render "joint_session", time: "16:45", title: "Meetup Breakout Sessions" %}
       {% render "joint_session", time: "17:10", title: "Break" %}
-      {% render "joint_session", time: "17:15", title: "🏆 Ruby Trivia Quiz 2 🏆" %}
+      {% render "joint_session", time: "17:15", title: "🏆 Ruby Trivia Quiz 2 🏆", joinLink: true %}
       {% render "speakers_slot", speakers: site.data.speakers, tracks: site.data.tracks, time: "17:25" %}
       {% render "joint_session", time: "18:10", title: "Closing Remarks and Post-Event Hangout Hour" %}
     </tbody>
@@ -263,4 +263,12 @@ We will also have exciting contests and prizes for all our participants across t
     el.addEventListener("keyup", function(e) { if (e.keyCode === 13) toggleTime(e); });
   });
   document.body.querySelector("#time-display-toggle li[data-time=local]").click()
+
+  var showCurrentLinks = function() {
+    document.querySelectorAll('.outlink.is-hidden').forEach(function(link) {
+      if (new Date() > Date.parse(link.dataset.hideUntil)) link.classList.remove('is-hidden');
+    });
+  }
+  setInterval(showCurrentLinks, 3000);
+  showCurrentLinks();
 </script>

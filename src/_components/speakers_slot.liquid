@@ -7,7 +7,7 @@
   {% for track in tracks %}
     {% assign speaker = speakers | where: "track", track.name | first %}
     {% if speaker %}
-      {% render "speakers_slot_entry", speaker: speaker, track: track %}
+      {% render "speakers_slot_entry", speaker: speaker, track: track, time: time %}
     {% else %}
       <td></td>
     {% endif %}

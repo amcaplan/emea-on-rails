@@ -1,7 +1,20 @@
+{% assign currentTime = "now" | date: "%Y-%m-%d %H:%M %z" %}
+{% assign slotTime = time | date: "2021-06-09 %H:%M +0000" %}
+
 <tr class="{% if title == "Break" %}break{% endif %}">
   <th>
     <span class="utc-time">{{ time }}</span>
     <span class="is-hidden local-time" data-time="2021-06-09T{{ time }}:00Z"></span>
   </th>
-  <td colspan="5" class="has-text-centered">{{ title }}{% if title == "Break" %} ☕️ {% endif %}</td>
+  <td colspan="5" class="has-text-centered">
+    {{ title }}{% if title == "Break" %} ☕️ {% endif %}
+    <br/>
+    {% if joinLink %}
+      {% if currentTime > slotTime %}
+        <a href="https://emeaonrails.sw.work/rooms/Main%20Stage" class="outlink is-hidden" data-hide-until="{{slotTime}}" target="_blank">
+          Join <img width="14" height="14" src="https://res.cloudinary.com/caplan/image/upload/f_auto,q_auto,w_28/v1622744727/emea-on-rails-2021/arrow-circle-right.svg" />
+        </a>
+      {% endif %}
+    {% endif %}
+  </td>
 </tr>

@@ -1,3 +1,6 @@
+{% assign currentTime = "now" | date: "%Y-%m-%d %H:%M %z" %}
+{% assign slotTime = time | date: "2021-06-09 %H:%M +0000" %}
+
 {% assign speaker-slug = speaker.name | downcase | replace: ' ', '-' %}
 <td id="td-{{ speaker-slug }}" class="speaker-schedule-listing">
   <a href="#td={{ speaker-slug }}" class="talk-modal-link" data-speaker-slug="{{ speaker-slug }}">
@@ -10,5 +13,11 @@
     <span class="tag is-warning">Workshop</span>
   {% else %}
     <span class="tag is-success">Talk</span>
+  {% endif %}
+    <br/>
+  {% if currentTime > "2021-06-09 14:00 +0000" %}
+    <a href="https://emeaonrails.sw.work/rooms/{{ track.name | replace : ' ', '%20' }}" class="outlink is-hidden" data-hide-until="{{slotTime}}" target="_blank">
+      Join <img width="14" height="14" src="https://res.cloudinary.com/caplan/image/upload/f_auto,q_auto,w_28/v1622744727/emea-on-rails-2021/arrow-circle-right.svg" />
+    </a>
   {% endif %}
 </td>
