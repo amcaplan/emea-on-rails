@@ -63,7 +63,15 @@ If a community member engages in unacceptable behavior, the community organizers
 
 ## 7. Reporting Guidelines
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. You can reach any one of the following people: Benjamin Aronov (@aronovbenjamin), Ariel Caplan (@amcaplan), Floor Drees (@FloorDrees), Ben Greenberg (@rabbigreenberg).
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. You can reach any one of the following people:
+
+* Benjamin Aronov (he/him), takes requests in English and Hebrew, [benjamin@emeaonrails.com](mailto:benjamin@emeaonrails.com)
+* Jan Zaydowicz (he/him), takes requests in English and German, [jan@emeaonrails.com](mailto:jan@emeaonrails.com)
+* Ben Greenberg (he/him), takes requests in English and Hebrew, [ben@emeaonrails.com](mailto:ben@emeaonrails.com)
+* Kevin Lewis (he/him), takes requests in English, [kevin@emeaonrails.com](mailto:kevin@emeaonrails.com)
+* Floor Drees (she/her), non-organizer contact, takes requests in Dutch, English and German, [floor@emeaonrails.com](mailto:floor@emeaonrails.com)
+
+You can also use the [provided form](https://docs.google.com/forms/d/e/1FAIpQLSf8EOu8XRIcVemF62dT3BYI9nP5_0sSaT7eJ-rb7sH0zYN5qQ/viewform?usp=sf_link), or email the group via [coc@emeaonrails.com](mailto:coc@emeaonrails.com).
 
 Additionally, community organizers are available to help community members engage with local law enforcement or to otherwise help those experiencing unacceptable behavior feel safe. In the context of in-person events, organizers will also provide escorts as desired by the person experiencing distress.
 
