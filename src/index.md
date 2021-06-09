@@ -262,7 +262,11 @@ We will also have exciting contests and prizes for all our participants across t
   });
   document.body.querySelector("#time-display-toggle li[data-time=local]").click()
 
-  document.querySelectorAll('.outlink.is-hidden').forEach(function(link) {
-    if (new Date() > Date.parse(link.dataset.hideUntil)) link.classList.remove('is-hidden');
-  });
+  var showCurrentLinks = function() {
+    document.querySelectorAll('.outlink.is-hidden').forEach(function(link) {
+      if (new Date() > Date.parse(link.dataset.hideUntil)) link.classList.remove('is-hidden');
+    });
+  }
+  setInterval(showCurrentLinks, 3000);
+  showCurrentLinks();
 </script>
