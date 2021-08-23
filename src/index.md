@@ -41,7 +41,7 @@ We will also have exciting contests and prizes for all our participants across t
   <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
     <a href="{{meetup.homepage}}" target="_blank">
       <figure class="image is-2by1">
-        <img src="https://res.cloudinary.com/caplan/image/upload/w_400,h_200,c_pad,f_auto,q_auto/v1/emea-on-rails-2021/meetups/{{meetup.logo}}-logo.jpg" alt="{{meetup.name}}" />
+        <img src="https://res.cloudinary.com/emea-on-rails/image/upload/w_400,h_200,c_pad,f_auto,q_auto/v1/emea-on-rails-2021/meetups/{{meetup.logo}}-logo.jpg" alt="{{meetup.name}}" />
       </figure>
     </a>
   </div>
@@ -62,7 +62,7 @@ We will also have exciting contests and prizes for all our participants across t
     <div class="card">
       <div class="card-image">
         <figure class="image is-1by1">
-          <img src="https://res.cloudinary.com/caplan/image/{% if speaker.avatar %}upload{% else %}twitter_name{% endif %}/w_400,h_400,c_fill,f_auto,q_auto/{% if speaker.avatar %}emea-on-rails-2021/speakers/{{speaker.avatar}}{% else %}{{speaker.twitter}}{% endif %}.jpg" alt="Profile of {{speaker.name}}" />
+          <img src="https://res.cloudinary.com/emea-on-rails/image/{% if speaker.avatar %}upload{% else %}twitter_name{% endif %}/w_400,h_400,c_fill,f_auto,q_auto/{% if speaker.avatar %}emea-on-rails-2021/speakers/{{speaker.avatar}}{% else %}{{speaker.twitter}}{% endif %}.jpg" alt="Profile of {{speaker.name}}" />
         </figure>
       </div>
       <div class="card-content">
@@ -170,7 +170,7 @@ We will also have exciting contests and prizes for all our participants across t
   <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
     <a href="{{supporter.homepage}}" target="_blank">
       <figure class="image is-2by1">
-        <img src="https://res.cloudinary.com/caplan/image/upload/w_400,h_200,c_pad,f_auto,q_auto/v1/emea-on-rails-2021/supporters/{{supporter.logo}}-logo.jpg" alt="{{supporter.name}}" />
+        <img src="https://res.cloudinary.com/emea-on-rails/image/upload/w_400,h_200,c_pad,f_auto,q_auto/v1/emea-on-rails-2021/supporters/{{supporter.logo}}-logo.jpg" alt="{{supporter.name}}" />
       </figure>
     </a>
   </div>
@@ -189,7 +189,7 @@ We will also have exciting contests and prizes for all our participants across t
   <div class="column is-2-desktop is-3-tablet is-6-mobile is-flex" style="justify-content: center;">
      <a href="{% if organizer.link %}{{ organizer.link }}{% else %}https://twitter.com/{{ organizer.twitter }}{% endif %}" target="_blank">
       <figure class="image is-128x128">
-          <img src="https://res.cloudinary.com/caplan/image/{% if organizer.avatar %}upload{% else %}twitter_name{% endif %}/w_256,h_256,c_fill,r_max,f_auto,q_auto/{% if organizer.avatar %}emea-on-rails-2021/organizers/{{organizer.avatar}}{% else %}{{organizer.twitter}}{% endif %}.jpg" alt="Profile of {{organizer.name}}" />
+          <img src="https://res.cloudinary.com/emea-on-rails/image/{% if organizer.avatar %}upload{% else %}twitter_name{% endif %}/w_256,h_256,c_fill,r_max,f_auto,q_auto/{% if organizer.avatar %}emea-on-rails-2021/organizers/{{organizer.avatar}}{% else %}{{organizer.twitter}}{% endif %}.jpg" alt="Profile of {{organizer.name}}" />
       </figure>
       <div class="has-text-centered has-text-weight-semibold is-size-5">
         {{ organizer.name }}

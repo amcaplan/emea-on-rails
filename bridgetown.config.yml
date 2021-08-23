@@ -25,4 +25,4 @@ pagination:
 # timezone: America/Los_Angeles
 
 cloudinary:
-  cloud_name: caplan
+  cloud_name: emea-on-rails

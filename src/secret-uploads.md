@@ -11,7 +11,7 @@ noindex: true
 <script type="text/javascript">  
 (function() {
   var myWidget = cloudinary.createUploadWidget({
-    cloudName: 'caplan',
+    cloudName: 'emea-on-rails',
     uploadPreset: 'emea-on-rails-2021-featured-videos'}, (error, result) => {
       if (!error && result && result.event === "success") {
         console.log('Done! Here is the video info: ', result.info);
